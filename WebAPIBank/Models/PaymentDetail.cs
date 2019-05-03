@@ -9,7 +9,6 @@ namespace WebAPIBank.Models
 {
     public class PaymentDetail
     {
-
         [Key]
         public int Id { get; set; }
 
@@ -24,7 +23,6 @@ namespace WebAPIBank.Models
         [Required]
         [Column(TypeName = "varchar(5)")]
         public string ExpirationDate { get; set; }
-
 
         [Required]
         [Column(TypeName = "varchar(3)")]
