@@ -9,18 +9,27 @@ package manager console:
 1 - Add-Migration "InitialCreate" or EntityFrameworkCore\Add-Migration "InitialCreate"
 2 - Update-Database or EntityFrameworkCore\Update-Database
 
-json custom serializer to maintain the capitalletters on database fields instead camelcase -> setup.cs configureservices
+# Back-end
+At Startup.cs:
+* Custom configuration: Use the default field names definied on the API instead CamelCase pattern
 
-boostrap layout
-fontawsome icons
+# Front-end
 
-PaymentDetails - created without default style
+## External Layout Libraries
+* Bootstrap
+* Font Awesome
 
-ng g n component
---spec=false or skipTests
---s = no style
+## Structure
+
+_The components have been created without default style._
+
+PaymentDetails
+  PaymentDetail
+  PaymentDetailList
+Shared
+  PaymentDetailService
+  PaymentDetailModel
 
 
 
-Generate a model class
-ng cl (or class) payment-detail --type=model 
+
